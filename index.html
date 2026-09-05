@@ -99,3 +99,173 @@
         <p class="text-slate-600">The tools and technologies I use to bring ideas to life.</p>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="text-center p-8 bg-white rounded-2xl shadow-sm border border-slate-100">
+          <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mx-auto mb-4 text-blue-600">
+            <i data-lucide="brain"></i>
+          </div>
+          <h5 class="font-bold">Deep Learning</h5>
+          <p class="text-xs text-slate-500 mt-2">PyTorch, TensorFlow, CNNs</p>
+        </div>
+        <div class="text-center p-8 bg-white rounded-2xl shadow-sm border border-slate-100">
+          <div class="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center mx-auto mb-4 text-purple-600">
+            <i data-lucide="message-square"></i>
+          </div>
+          <h5 class="font-bold">NLP & LLMs</h5>
+          <p class="text-xs text-slate-500 mt-2">LangChain, LlamaIndex, Ollama</p>
+        </div>
+        <div class="text-center p-8 bg-white rounded-2xl shadow-sm border border-slate-100">
+          <div class="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center mx-auto mb-4 text-indigo-600">
+            <i data-lucide="database"></i>
+          </div>
+          <h5 class="font-bold">Data Engineering</h5>
+          <p class="text-xs text-slate-500 mt-2">SQL, Vector DBs, Pandas</p>
+        </div>
+        <div class="text-center p-8 bg-white rounded-2xl shadow-sm border border-slate-100">
+          <div class="w-12 h-12 bg-cyan-50 rounded-xl flex items-center justify-center mx-auto mb-4 text-cyan-600">
+            <i data-lucide="code-2"></i>
+          </div>
+          <h5 class="font-bold">Languages</h5>
+          <p class="text-xs text-slate-500 mt-2">Python, C++, SQL</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex justify-between items-end mb-16">
+        <div>
+          <h3 class="text-3xl font-bold mb-4">Featured Projects</h3>
+          <p class="text-slate-600">A selection of my recent work in AI and Data Science.</p>
+        </div>
+        <a href="https://github.com/KhushbuParmar313" target="_blank" class="hidden md:flex items-center gap-2 text-blue-600 font-semibold hover:underline">
+          View all on GitHub <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div class="project-card bg-slate-50 rounded-3xl p-8 border border-slate-100 flex flex-col h-full">
+          <div class="mb-6">
+            <div class="flex gap-2 mb-4">
+              <span class="px-3 py-1 bg-blue-100 text-blue-700 text-[10px] font-bold uppercase rounded-full tracking-wider">Deep Learning</span>
+              <span class="px-3 py-1 bg-slate-200 text-slate-700 text-[10px] font-bold uppercase rounded-full tracking-wider">Python</span>
+            </div>
+            <h4 class="text-xl font-bold mb-3">1D CNN for Time Series</h4>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Custom 1D CNN architecture built from scratch for high-performance time series forecasting on resource-constrained devices.
+            </p>
+          </div>
+          <div class="mt-auto pt-6 border-t border-slate-200 flex justify-between items-center">
+            <a href="#" class="text-slate-900 font-bold text-sm flex items-center gap-2 hover:text-blue-600 transition-colors">
+              Source Code <i data-lucide="github" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card bg-slate-50 rounded-3xl p-8 border border-slate-100 flex flex-col h-full">
+          <div class="mb-6">
+            <div class="flex gap-2 mb-4">
+              <span class="px-3 py-1 bg-purple-100 text-purple-700 text-[10px] font-bold uppercase rounded-full tracking-wider">GenAI</span>
+              <span class="px-3 py-1 bg-indigo-100 text-indigo-700 text-[10px] font-bold uppercase rounded-full tracking-wider">RAG</span>
+            </div>
+            <h4 class="text-xl font-bold mb-3">Fusion RAG System</h4>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              A hybrid search RAG system combining LangChain, LlamaIndex, and Ollama for intelligent document retrieval and analysis.
+            </p>
+          </div>
+          <div class="mt-auto pt-6 border-t border-slate-200 flex justify-between items-center">
+            <a href="https://github.com/KhushbuParmar313/GenAI/tree/main/Fusion_RAG_Hybrid_Search" class="text-slate-900 font-bold text-sm flex items-center gap-2 hover:text-blue-600 transition-colors">
+              Source Code <i data-lucide="github" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card bg-slate-50 rounded-3xl p-8 border border-slate-100 flex flex-col h-full">
+          <div class="mb-6">
+            <div class="flex gap-2 mb-4">
+              <span class="px-3 py-1 bg-cyan-100 text-cyan-700 text-[10px] font-bold uppercase rounded-full tracking-wider">ML</span>
+              <span class="px-3 py-1 bg-slate-200 text-slate-700 text-[10px] font-bold uppercase rounded-full tracking-wider">Regression</span>
+            </div>
+            <h4 class="text-xl font-bold mb-3">Vehicle Price Prediction</h4>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              End-to-end machine learning pipeline using Linear Regression from scratch to predict vehicle market values with high accuracy.
+            </p>
+          </div>
+          <div class="mt-auto pt-6 border-t border-slate-200 flex justify-between items-center">
+            <a href="#" class="text-slate-900 font-bold text-sm flex items-center gap-2 hover:text-blue-600 transition-colors">
+              Source Code <i data-lucide="github" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-24 bg-slate-900 text-white overflow-hidden relative">
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <h3 class="text-4xl font-bold mb-6">Let's build something <span class="text-blue-400">extraordinary</span>.</h3>
+          <p class="text-slate-400 text-lg mb-10 leading-relaxed">
+            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+          </p>
+          <div class="space-y-6">
+            <a href="mailto:khushbuparmar3132@gmail.com" class="flex items-center gap-4 group">
+              <div class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center group-hover:bg-blue-600 transition-colors">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="text-xs text-slate-500 font-bold uppercase tracking-widest">Email Me</p>
+                <p class="text-lg font-medium">khushbuparmar3132@gmail.com</p>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/khushbuparmar313/" target="_blank" class="flex items-center gap-4 group">
+              <div class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center group-hover:bg-blue-600 transition-colors">
+                <i data-lucide="linkedin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="text-xs text-slate-500 font-bold uppercase tracking-widest">LinkedIn</p>
+                <p class="text-lg font-medium">khushbuparmar313</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="bg-slate-800 p-8 rounded-3xl border border-slate-700">
+          <form class="space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <input type="text" placeholder="Name" class="bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors w-full">
+              <input type="email" placeholder="Email" class="bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors w-full">
+            </div>
+            <textarea placeholder="Message" rows="4" class="bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors w-full"></textarea>
+            <button type="submit" class="w-full bg-blue-600 text-white font-bold py-4 rounded-xl hover:bg-blue-700 transition-all shadow-lg shadow-blue-900/20">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Background Decoration -->
+    <div class="absolute top-0 right-0 w-1/2 h-full bg-blue-600/10 blur-[120px] -z-0"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-500 py-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+      <p class="text-sm">© 2026 Khushbu Parmar. Built with Passion & AI.</p>
+      <div class="flex space-x-6">
+        <a href="#" class="hover:text-white transition-colors"><i data-lucide="github" class="w-5 h-5"></i></a>
+        <a href="#" class="hover:text-white transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+        <a href="#" class="hover:text-white transition-colors"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
