@@ -3,88 +3,144 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Khushbu Parmar | Data Science Engineer</title>
+  <title>Khushbu Parmar | Data Scientist at Siemens</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
   <style>
     body { font-family: 'Inter', sans-serif; }
-    .glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); }
-    .project-card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
-    .gradient-text { background: linear-gradient(to right, #2563eb, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .glass { background: rgba(255, 255, 255, 0.75); backdrop-filter: blur(12px); }
+    .card-hover:hover { transform: translateY(-5px); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+    .gradient-text { background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .section-spacing { padding-top: 6rem; padding-bottom: 6rem; }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body class="bg-slate-50 text-slate-900 selection:bg-blue-100 selection:text-blue-700">
 
   <!-- Navigation -->
-  <header class="fixed top-0 w-full z-50 glass border-b border-slate-200">
+  <header class="fixed top-0 w-full z-50 glass border-b border-slate-200/60">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold tracking-tight gradient-text">KP.</h1>
-      <nav class="hidden md:flex space-x-8 text-sm font-medium">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">K</div>
+        <h1 class="text-xl font-bold tracking-tight gradient-text hidden sm:block">Khushbu Parmar</h1>
+      </div>
+      <nav class="hidden md:flex space-x-8 text-sm font-semibold text-slate-600">
         <a href="#about" class="hover:text-blue-600 transition-colors">About</a>
+        <a href="#experience" class="hover:text-blue-600 transition-colors">Experience</a>
         <a href="#skills" class="hover:text-blue-600 transition-colors">Skills</a>
         <a href="#projects" class="hover:text-blue-600 transition-colors">Projects</a>
         <a href="#contact" class="hover:text-blue-600 transition-colors">Contact</a>
       </nav>
-      <a href="mailto:khushbuparmar3132@gmail.com" class="bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-blue-700 transition-all shadow-lg shadow-blue-200">Hire Me</a>
+      <div class="flex items-center gap-4">
+        <a href="https://github.com/KhushbuParmar313" target="_blank" class="text-slate-500 hover:text-slate-900"><i data-lucide="github" class="w-5 h-5"></i></a>
+        <a href="mailto:khushbuparmar3132@gmail.com" class="bg-slate-900 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-slate-800 transition-all shadow-md">Contact</a>
+      </div>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+  <section class="relative pt-32 pb-20 lg:pt-56 lg:pb-40 overflow-hidden">
     <div class="max-w-7xl mx-auto px-6 relative z-10">
-      <div class="text-center">
-        <span class="inline-block py-1 px-3 rounded-full bg-blue-50 text-blue-600 text-xs font-bold tracking-widest uppercase mb-4">Available for new opportunities</span>
-        <h2 class="text-5xl lg:text-7xl font-extrabold mb-6 tracking-tight">
-          Hi, I'm <span class="gradient-text">Khushbu Parmar</span>
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 py-1 px-3 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-xs font-bold uppercase tracking-wider mb-6">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+          </span>
+          Data Scientist at Siemens
+        </div>
+        <h2 class="text-6xl lg:text-8xl font-extrabold mb-8 tracking-tighter leading-[1.1]">
+          Building <span class="gradient-text">Scalable AI</span> for the Real World.
         </h2>
-        <p class="text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-          A Data Science Engineer crafting resource-efficient AI systems—from real-time forecasting on microcontrollers to intelligent document assistants.
+        <p class="text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl">
+          Based in Bengaluru, India. Specializing in Generative AI, Deep Learning, and Edge Deployment to transform complex data into actionable industrial insights.
         </p>
-        <div class="flex flex-col sm:flex-row justify-center gap-4">
-          <a href="#projects" class="bg-slate-900 text-white px-8 py-3 rounded-xl font-semibold hover:bg-slate-800 transition-all">View My Work</a>
-          <a href="https://www.linkedin.com/in/khushbuparmar313/" target="_blank" class="bg-white border border-slate-200 px-8 py-3 rounded-xl font-semibold hover:bg-slate-50 transition-all flex items-center justify-center gap-2">
-            <i data-lucide="linkedin" class="w-5 h-5"></i> LinkedIn
+        <div class="flex flex-wrap gap-4">
+          <a href="#experience" class="bg-blue-600 text-white px-8 py-4 rounded-2xl font-bold hover:bg-blue-700 transition-all shadow-xl shadow-blue-200 flex items-center gap-2">
+            Explore My Work <i data-lucide="arrow-right" class="w-5 h-5"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/khushbuparmar313/" target="_blank" class="bg-white border border-slate-200 px-8 py-4 rounded-2xl font-bold hover:bg-slate-50 transition-all flex items-center gap-2">
+            <i data-lucide="linkedin" class="w-5 h-5 text-blue-600"></i> LinkedIn
           </a>
         </div>
       </div>
     </div>
-    <!-- Background Decoration -->
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-0 opacity-20">
-      <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-400 rounded-full blur-[120px]"></div>
-      <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-purple-400 rounded-full blur-[120px]"></div>
+    <!-- Decorative Background -->
+    <div class="absolute top-0 right-0 w-full h-full -z-10 opacity-30 pointer-events-none">
+      <div class="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] bg-blue-400 rounded-full blur-[160px]"></div>
+      <div class="absolute bottom-[-10%] left-[-5%] w-[400px] h-[400px] bg-purple-400 rounded-full blur-[140px]"></div>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="py-24 bg-white">
+  <!-- Professional Summary -->
+  <section id="about" class="section-spacing bg-white border-y border-slate-100">
     <div class="max-w-7xl mx-auto px-6">
-      <div class="grid lg:grid-cols-2 gap-16 items-center">
-        <div>
-          <h3 class="text-3xl font-bold mb-6">Turning Data into Impactful Solutions</h3>
-          <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-            I specialize in building AI that is not just smart, but practical and scalable. With a deep focus on **Generative AI**, **Deep Learning**, and **Computer Vision**, I bridge the gap between complex research and real-world deployment.
-          </p>
-          <p class="text-lg text-slate-600 leading-relaxed">
-            Whether it's optimizing 1D CNNs for edge devices or architecting Hybrid RAG systems, my goal is to make AI accessible and resource-efficient.
-          </p>
+      <div class="grid lg:grid-cols-12 gap-12 items-start">
+        <div class="lg:col-span-4">
+          <h3 class="text-sm font-bold text-blue-600 uppercase tracking-[0.2em] mb-4">Summary</h3>
+          <h4 class="text-3xl font-bold tracking-tight">3 Years of AI Innovation</h4>
         </div>
-        <div class="grid grid-cols-2 gap-4">
-          <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
-            <h4 class="font-bold text-2xl text-blue-600 mb-1">GenAI</h4>
-            <p class="text-sm text-slate-500 font-medium uppercase tracking-wider">Specialization</p>
+        <div class="lg:col-span-8">
+          <p class="text-xl text-slate-600 leading-relaxed mb-8">
+            A passionate Data Scientist with experience in Machine Learning, Deep Learning, NLP, and AI system development. I specialize in building scalable end-to-end AI solutions and transforming complex datasets into actionable insights.
+          </p>
+          <div class="grid sm:grid-cols-2 gap-8">
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-10 h-10 bg-slate-50 rounded-lg flex items-center justify-center text-slate-600"><i data-lucide="search" class="w-5 h-5"></i></div>
+              <div>
+                <h5 class="font-bold mb-1">Research Focus</h5>
+                <p class="text-sm text-slate-500">Deep Learning, Time Series, Edge Deployment, GenAI, Computer Vision, NLP.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-10 h-10 bg-slate-50 rounded-lg flex items-center justify-center text-slate-600"><i data-lucide="users" class="w-5 h-5"></i></div>
+              <div>
+                <h5 class="font-bold mb-1">Collaboration</h5>
+                <p class="text-sm text-slate-500">Proven experience collaborating with cross-functional teams to deliver production-ready AI systems.</p>
+              </div>
+            </div>
           </div>
-          <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
-            <h4 class="font-bold text-2xl text-purple-600 mb-1">RAG</h4>
-            <p class="text-sm text-slate-500 font-medium uppercase tracking-wider">Architecture</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section-spacing bg-slate-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-20">
+        <h3 class="text-sm font-bold text-blue-600 uppercase tracking-[0.2em] mb-4">Career Path</h3>
+        <h4 class="text-4xl font-bold tracking-tight">Professional Experience</h4>
+      </div>
+
+      <div class="relative border-l-2 border-slate-200 ml-4 md:ml-0 md:left-1/2">
+        <!-- Siemens Full-time -->
+        <div class="mb-20 relative">
+          <div class="md:absolute md:left-[-12px] top-0 w-6 h-6 bg-blue-600 rounded-full border-4 border-white shadow-sm"></div>
+          <div class="md:w-1/2 md:pr-12 md:text-right md:ml-0 ml-8">
+            <span class="text-xs font-bold text-blue-600 uppercase tracking-widest">Sep 2024 — Present</span>
+            <h5 class="text-2xl font-bold mt-2">Data Scientist</h5>
+            <p class="text-slate-500 font-medium mb-6">Siemens | Bengaluru, India</p>
+            <div class="space-y-4 text-slate-600 text-sm md:flex md:flex-col md:items-end">
+              <p class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 inline-block text-left">Developed NILM system for load disaggregation using FFT and CNN-based pattern recognition.</p>
+              <p class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 inline-block text-left">Architected Power Source Management (PSM) on edge hardware with 1D CNN fine-tuning.</p>
+              <p class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 inline-block text-left">Deployed resource-efficient load forecasting on STM32 Microcontrollers using TFLite.</p>
+            </div>
           </div>
-          <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
-            <h4 class="font-bold text-2xl text-indigo-600 mb-1">Edge AI</h4>
-            <p class="text-sm text-slate-500 font-medium uppercase tracking-wider">Deployment</p>
-          </div>
-          <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
-            <h4 class="font-bold text-2xl text-cyan-600 mb-1">Vision</h4>
-            <p class="text-sm text-slate-500 font-medium uppercase tracking-wider">Expertise</p>
+        </div>
+
+        <!-- Siemens Research -->
+        <div class="mb-20 relative">
+          <div class="md:absolute md:left-[-12px] top-0 w-6 h-6 bg-slate-300 rounded-full border-4 border-white shadow-sm"></div>
+          <div class="md:w-1/2 md:pl-12 md:ml-[50%] ml-8">
+            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest">Jul 2023 — Aug 2024</span>
+            <h5 class="text-2xl font-bold mt-2">Industrial Research in AI</h5>
+            <p class="text-slate-500 font-medium mb-6">Siemens | Bengaluru, India</p>
+            <div class="space-y-4 text-slate-600 text-sm">
+              <p class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100">Engineered an Operational Engineering Assistant using RAG with Hybrid search and multi-size chunking.</p>
+              <p class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100">Built APIs using FastAPI with Cassandra DB for real-time data streaming and thread management.</p>
+              <p class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100">Created CV system for Engineering drawings using YOLOX, HoughLines, and OCR.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -92,113 +148,135 @@
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="py-24 bg-slate-50">
+  <section id="skills" class="section-spacing bg-white">
     <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center mb-16">
-        <h3 class="text-3xl font-bold mb-4">Technical Arsenal</h3>
-        <p class="text-slate-600">The tools and technologies I use to bring ideas to life.</p>
+      <div class="text-center mb-20">
+        <h3 class="text-sm font-bold text-blue-600 uppercase tracking-[0.2em] mb-4">Expertise</h3>
+        <h4 class="text-4xl font-bold tracking-tight">Technical Arsenal</h4>
       </div>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-        <div class="text-center p-8 bg-white rounded-2xl shadow-sm border border-slate-100">
-          <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mx-auto mb-4 text-blue-600">
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Deep Learning -->
+        <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100">
+          <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-blue-200">
             <i data-lucide="brain"></i>
           </div>
-          <h5 class="font-bold">Deep Learning</h5>
-          <p class="text-xs text-slate-500 mt-2">PyTorch, TensorFlow, CNNs</p>
+          <h5 class="text-xl font-bold mb-4">Deep Learning & Edge</h5>
+          <ul class="space-y-3 text-slate-600 text-sm">
+            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-600 rounded-full"></div> CNNs, RNNs, Transformers</li>
+            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-600 rounded-full"></div> Object Detection (YOLO, YOLOX)</li>
+            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-600 rounded-full"></div> TensorFlow Lite, MicroPython</li>
+            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-600 rounded-full"></div> CUDA, Keras, PyTorch</li>
+          </ul>
         </div>
-        <div class="text-center p-8 bg-white rounded-2xl shadow-sm border border-slate-100">
-          <div class="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center mx-auto mb-4 text-purple-600">
-            <i data-lucide="message-square"></i>
+
+        <!-- Machine Learning -->
+        <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100">
+          <div class="w-12 h-12 bg-purple-600 text-white rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-purple-200">
+            <i data-lucide="bar-chart-3"></i>
           </div>
-          <h5 class="font-bold">NLP & LLMs</h5>
-          <p class="text-xs text-slate-500 mt-2">LangChain, LlamaIndex, Ollama</p>
+          <h5 class="text-xl font-bold mb-4">ML & Computer Vision</h5>
+          <ul class="space-y-3 text-slate-600 text-sm">
+            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-purple-600 rounded-full"></div> Ensemble Methods (XGBoost, RF)</li>
+            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-purple-600 rounded-full"></div> OpenCV, Scikit-Learn</li>
+            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-purple-600 rounded-full"></div> Feature Engineering & Tuning</li>
+            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-purple-600 rounded-full"></div> Pandas, NumPy, Matplotlib</li>
+          </ul>
         </div>
-        <div class="text-center p-8 bg-white rounded-2xl shadow-sm border border-slate-100">
-          <div class="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center mx-auto mb-4 text-indigo-600">
-            <i data-lucide="database"></i>
+
+        <!-- GenAI -->
+        <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100">
+          <div class="w-12 h-12 bg-indigo-600 text-white rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-indigo-200">
+            <i data-lucide="sparkles"></i>
           </div>
-          <h5 class="font-bold">Data Engineering</h5>
-          <p class="text-xs text-slate-500 mt-2">SQL, Vector DBs, Pandas</p>
-        </div>
-        <div class="text-center p-8 bg-white rounded-2xl shadow-sm border border-slate-100">
-          <div class="w-12 h-12 bg-cyan-50 rounded-xl flex items-center justify-center mx-auto mb-4 text-cyan-600">
-            <i data-lucide="code-2"></i>
-          </div>
-          <h5 class="font-bold">Languages</h5>
-          <p class="text-xs text-slate-500 mt-2">Python, C++, SQL</p>
+          <h5 class="text-xl font-bold mb-4">Generative AI & NLP</h5>
+          <ul class="space-y-3 text-slate-600 text-sm">
+            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-indigo-600 rounded-full"></div> LLMs & RAG Architectures</li>
+            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-indigo-600 rounded-full"></div> LangChain & LlamaIndex</li>
+            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-indigo-600 rounded-full"></div> Prompt Engineering</li>
+            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-indigo-600 rounded-full"></div> Vector DBs (FAISS, Cassandra)</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="py-24 bg-white">
+  <section id="projects" class="section-spacing bg-slate-50">
     <div class="max-w-7xl mx-auto px-6">
-      <div class="flex justify-between items-end mb-16">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
         <div>
-          <h3 class="text-3xl font-bold mb-4">Featured Projects</h3>
-          <p class="text-slate-600">A selection of my recent work in AI and Data Science.</p>
+          <h3 class="text-sm font-bold text-blue-600 uppercase tracking-[0.2em] mb-4">Portfolio</h3>
+          <h4 class="text-4xl font-bold tracking-tight">Academic & Personal Projects</h4>
         </div>
-        <a href="https://github.com/KhushbuParmar313" target="_blank" class="hidden md:flex items-center gap-2 text-blue-600 font-semibold hover:underline">
-          View all on GitHub <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        <a href="https://github.com/KhushbuParmar313" target="_blank" class="flex items-center gap-2 text-slate-900 font-bold hover:text-blue-600 transition-colors">
+          Explore all on GitHub <i data-lucide="external-link" class="w-4 h-4"></i>
         </a>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Project 1 -->
-        <div class="project-card bg-slate-50 rounded-3xl p-8 border border-slate-100 flex flex-col h-full">
-          <div class="mb-6">
-            <div class="flex gap-2 mb-4">
-              <span class="px-3 py-1 bg-blue-100 text-blue-700 text-[10px] font-bold uppercase rounded-full tracking-wider">Deep Learning</span>
-              <span class="px-3 py-1 bg-slate-200 text-slate-700 text-[10px] font-bold uppercase rounded-full tracking-wider">Python</span>
-            </div>
-            <h4 class="text-xl font-bold mb-3">1D CNN for Time Series</h4>
-            <p class="text-slate-600 text-sm leading-relaxed">
-              Custom 1D CNN architecture built from scratch for high-performance time series forecasting on resource-constrained devices.
-            </p>
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Birds Audio -->
+        <div class="card-hover bg-white rounded-3xl p-8 border border-slate-200 shadow-sm flex flex-col">
+          <div class="flex gap-2 mb-6">
+            <span class="px-3 py-1 bg-blue-50 text-blue-600 text-[10px] font-bold uppercase rounded-full border border-blue-100">Transformer</span>
+            <span class="px-3 py-1 bg-slate-50 text-slate-600 text-[10px] font-bold uppercase rounded-full border border-slate-100">Audio AI</span>
           </div>
-          <div class="mt-auto pt-6 border-t border-slate-200 flex justify-between items-center">
-            <a href="#" class="text-slate-900 font-bold text-sm flex items-center gap-2 hover:text-blue-600 transition-colors">
-              Source Code <i data-lucide="github" class="w-4 h-4"></i>
-            </a>
+          <h5 class="text-2xl font-bold mb-4">Birds Audio Identification</h5>
+          <p class="text-slate-600 text-sm leading-relaxed mb-8">
+            A bird audio classification system using Xeno-Canto dataset (105 species) by fine-tuning the DistilHuBERT Transformer model. Implemented robust preprocessing with Librosa to improve generalization.
+          </p>
+          <div class="mt-auto pt-6 border-t border-slate-100 flex justify-between items-center">
+            <span class="text-xs font-medium text-slate-400">Speech Representation Learning</span>
+            <a href="#" class="text-blue-600 font-bold text-sm flex items-center gap-1">View Project <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
           </div>
         </div>
 
-        <!-- Project 2 -->
-        <div class="project-card bg-slate-50 rounded-3xl p-8 border border-slate-100 flex flex-col h-full">
-          <div class="mb-6">
-            <div class="flex gap-2 mb-4">
-              <span class="px-3 py-1 bg-purple-100 text-purple-700 text-[10px] font-bold uppercase rounded-full tracking-wider">GenAI</span>
-              <span class="px-3 py-1 bg-indigo-100 text-indigo-700 text-[10px] font-bold uppercase rounded-full tracking-wider">RAG</span>
-            </div>
-            <h4 class="text-xl font-bold mb-3">Fusion RAG System</h4>
-            <p class="text-slate-600 text-sm leading-relaxed">
-              A hybrid search RAG system combining LangChain, LlamaIndex, and Ollama for intelligent document retrieval and analysis.
-            </p>
+        <!-- DocuFusion -->
+        <div class="card-hover bg-white rounded-3xl p-8 border border-slate-200 shadow-sm flex flex-col">
+          <div class="flex gap-2 mb-6">
+            <span class="px-3 py-1 bg-purple-50 text-purple-600 text-[10px] font-bold uppercase rounded-full border border-purple-100">RAG</span>
+            <span class="px-3 py-1 bg-slate-50 text-slate-600 text-[10px] font-bold uppercase rounded-full border border-slate-100">Streamlit</span>
           </div>
-          <div class="mt-auto pt-6 border-t border-slate-200 flex justify-between items-center">
-            <a href="https://github.com/KhushbuParmar313/GenAI/tree/main/Fusion_RAG_Hybrid_Search" class="text-slate-900 font-bold text-sm flex items-center gap-2 hover:text-blue-600 transition-colors">
-              Source Code <i data-lucide="github" class="w-4 h-4"></i>
-            </a>
+          <h5 class="text-2xl font-bold mb-4">DocuFusion AI Assistant</h5>
+          <p class="text-slate-600 text-sm leading-relaxed mb-8">
+            Multi-format Document Retrieval System using Streamlit and Ollama. Integrated BM25 and VectorStore retrievers with QueryFusionRetriever for high accuracy across PDF/JSON/Text.
+          </p>
+          <div class="mt-auto pt-6 border-t border-slate-100 flex justify-between items-center">
+            <span class="text-xs font-medium text-slate-400">Fusion RAG Architecture</span>
+            <a href="https://github.com/KhushbuParmar313/GenAI/tree/main/Fusion_RAG_Hybrid_Search" target="_blank" class="text-blue-600 font-bold text-sm flex items-center gap-1">View Project <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- Project 3 -->
-        <div class="project-card bg-slate-50 rounded-3xl p-8 border border-slate-100 flex flex-col h-full">
-          <div class="mb-6">
-            <div class="flex gap-2 mb-4">
-              <span class="px-3 py-1 bg-cyan-100 text-cyan-700 text-[10px] font-bold uppercase rounded-full tracking-wider">ML</span>
-              <span class="px-3 py-1 bg-slate-200 text-slate-700 text-[10px] font-bold uppercase rounded-full tracking-wider">Regression</span>
-            </div>
-            <h4 class="text-xl font-bold mb-3">Vehicle Price Prediction</h4>
-            <p class="text-slate-600 text-sm leading-relaxed">
-              End-to-end machine learning pipeline using Linear Regression from scratch to predict vehicle market values with high accuracy.
-            </p>
+  <!-- Education Section -->
+  <section class="section-spacing bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-20">
+        <h3 class="text-sm font-bold text-blue-600 uppercase tracking-[0.2em] mb-4">Academic Background</h3>
+        <h4 class="text-4xl font-bold tracking-tight">Education</h4>
+      </div>
+      
+      <div class="max-w-4xl mx-auto space-y-8">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center p-8 bg-slate-50 rounded-3xl border border-slate-100">
+          <div>
+            <h5 class="text-xl font-bold">M.Tech in Computer Science</h5>
+            <p class="text-blue-600 font-medium">Specialization in Data Science</p>
+            <p class="text-slate-500 text-sm mt-1">Indian Institute of Information Technology (IIIT) Vadodara</p>
           </div>
-          <div class="mt-auto pt-6 border-t border-slate-200 flex justify-between items-center">
-            <a href="#" class="text-slate-900 font-bold text-sm flex items-center gap-2 hover:text-blue-600 transition-colors">
-              Source Code <i data-lucide="github" class="w-4 h-4"></i>
-            </a>
+          <div class="mt-4 md:mt-0 text-right">
+            <span class="bg-white px-4 py-1 rounded-full text-xs font-bold border border-slate-200">2022 — 2024</span>
+          </div>
+        </div>
+        
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center p-8 bg-slate-50 rounded-3xl border border-slate-100">
+          <div>
+            <h5 class="text-xl font-bold">B.E. in Electronics & Communication</h5>
+            <p class="text-slate-500 text-sm mt-1">Gujarat Technological University (GTU)</p>
+          </div>
+          <div class="mt-4 md:mt-0 text-right">
+            <span class="bg-white px-4 py-1 rounded-full text-xs font-bold border border-slate-200">2017 — 2021</span>
           </div>
         </div>
       </div>
@@ -206,65 +284,74 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-24 bg-slate-900 text-white overflow-hidden relative">
+  <section id="contact" class="section-spacing bg-slate-900 text-white relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-6 relative z-10">
-      <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div class="grid lg:grid-cols-2 gap-20 items-center">
         <div>
-          <h3 class="text-4xl font-bold mb-6">Let's build something <span class="text-blue-400">extraordinary</span>.</h3>
-          <p class="text-slate-400 text-lg mb-10 leading-relaxed">
-            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+          <h3 class="text-5xl font-extrabold mb-8 leading-tight">Let's solve <span class="text-blue-400">complex</span> problems together.</h3>
+          <p class="text-slate-400 text-lg mb-12 max-w-md">
+            I'm currently based in Bengaluru and open to discussing innovative AI projects or research collaborations.
           </p>
-          <div class="space-y-6">
-            <a href="mailto:khushbuparmar3132@gmail.com" class="flex items-center gap-4 group">
-              <div class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center group-hover:bg-blue-600 transition-colors">
-                <i data-lucide="mail" class="w-5 h-5"></i>
-              </div>
+          
+          <div class="space-y-8">
+            <div class="flex items-center gap-6">
+              <div class="w-14 h-14 bg-slate-800 rounded-2xl flex items-center justify-center text-blue-400 shadow-inner"><i data-lucide="phone" class="w-6 h-6"></i></div>
               <div>
-                <p class="text-xs text-slate-500 font-bold uppercase tracking-widest">Email Me</p>
-                <p class="text-lg font-medium">khushbuparmar3132@gmail.com</p>
+                <p class="text-xs text-slate-500 font-bold uppercase tracking-widest">Call Me</p>
+                <p class="text-xl font-medium">+91 79902 09627</p>
               </div>
-            </a>
-            <a href="https://www.linkedin.com/in/khushbuparmar313/" target="_blank" class="flex items-center gap-4 group">
-              <div class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center group-hover:bg-blue-600 transition-colors">
-                <i data-lucide="linkedin" class="w-5 h-5"></i>
-              </div>
+            </div>
+            <div class="flex items-center gap-6">
+              <div class="w-14 h-14 bg-slate-800 rounded-2xl flex items-center justify-center text-blue-400 shadow-inner"><i data-lucide="mail" class="w-6 h-6"></i></div>
               <div>
-                <p class="text-xs text-slate-500 font-bold uppercase tracking-widest">LinkedIn</p>
-                <p class="text-lg font-medium">khushbuparmar313</p>
+                <p class="text-xs text-slate-500 font-bold uppercase tracking-widest">Email</p>
+                <p class="text-xl font-medium">khushbuparmar3132@gmail.com</p>
               </div>
-            </a>
+            </div>
           </div>
         </div>
-        <div class="bg-slate-800 p-8 rounded-3xl border border-slate-700">
-          <form class="space-y-4">
-            <div class="grid grid-cols-2 gap-4">
-              <input type="text" placeholder="Name" class="bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors w-full">
-              <input type="email" placeholder="Email" class="bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors w-full">
+        
+        <div class="bg-slate-800/50 p-10 rounded-[2.5rem] border border-slate-700/50 backdrop-blur-sm">
+          <form class="space-y-6">
+            <div class="grid sm:grid-cols-2 gap-6">
+              <div class="space-y-2">
+                <label class="text-xs font-bold text-slate-400 uppercase tracking-wider">Name</label>
+                <input type="text" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors">
+              </div>
+              <div class="space-y-2">
+                <label class="text-xs font-bold text-slate-400 uppercase tracking-wider">Email</label>
+                <input type="email" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors">
+              </div>
             </div>
-            <textarea placeholder="Message" rows="4" class="bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors w-full"></textarea>
-            <button type="submit" class="w-full bg-blue-600 text-white font-bold py-4 rounded-xl hover:bg-blue-700 transition-all shadow-lg shadow-blue-900/20">Send Message</button>
+            <div class="space-y-2">
+              <label class="text-xs font-bold text-slate-400 uppercase tracking-wider">Message</label>
+              <textarea rows="4" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-blue-600 text-white font-bold py-5 rounded-2xl hover:bg-blue-700 transition-all shadow-xl shadow-blue-900/40">Send Message</button>
           </form>
         </div>
       </div>
     </div>
-    <!-- Background Decoration -->
-    <div class="absolute top-0 right-0 w-1/2 h-full bg-blue-600/10 blur-[120px] -z-0"></div>
+    <!-- Background Glow -->
+    <div class="absolute top-0 right-0 w-1/2 h-full bg-blue-600/10 blur-[160px] -z-0"></div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-slate-900 text-slate-500 py-12 border-t border-slate-800">
-    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-      <p class="text-sm">© 2026 Khushbu Parmar. Built with Passion & AI.</p>
-      <div class="flex space-x-6">
-        <a href="#" class="hover:text-white transition-colors"><i data-lucide="github" class="w-5 h-5"></i></a>
-        <a href="#" class="hover:text-white transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
-        <a href="#" class="hover:text-white transition-colors"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+  <footer class="py-12 bg-slate-900 border-t border-slate-800/50 text-slate-500">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+      <div class="flex items-center gap-2">
+        <div class="w-6 h-6 bg-slate-800 rounded flex items-center justify-center text-xs font-bold">K</div>
+        <p class="text-sm font-medium">© 2026 Khushbu Parmar. Built with Passion & AI.</p>
+      </div>
+      <div class="flex gap-8">
+        <a href="https://github.com/KhushbuParmar313" target="_blank" class="hover:text-white transition-colors"><i data-lucide="github" class="w-5 h-5"></i></a>
+        <a href="https://www.linkedin.com/in/khushbuparmar313/" target="_blank" class="hover:text-white transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+        <a href="https://khushbuparmar313.github.io/my-portfolio" target="_blank" class="hover:text-white transition-colors"><i data-lucide="globe" class="w-5 h-5"></i></a>
       </div>
     </div>
   </footer>
 
   <script>
-    // Initialize Lucide icons
     lucide.createIcons();
   </script>
 </body>
